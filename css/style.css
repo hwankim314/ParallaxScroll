@@ -1,0 +1,95 @@
+body{
+    background-color: #0a2a43;
+    min-height: 1500px;
+}
+.stage{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.stage:before{
+    content:'';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #0a2a43, transparent);
+    z-index: 10000;
+}
+.stage:after{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0a2a43;
+    z-index: 10000;
+    mix-blend-mode: color;
+}
+#moon{
+    position: absolute;
+    left: 70vw;
+    top:3vh;
+    width: 20vw;
+    height: 20vw;
+    background-image: url('../images/moon.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 100;
+}
+#sky{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 50vw;
+    background-image: url('../images/sky2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#mountain{
+    position: absolute;
+    left: 0;
+    top: 35vh;
+    width: 100vw;
+    height: 100vw;
+    background-image: url('../images/mountain5.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 10;
+}
+#road{
+    position: absolute;
+    left: 0;
+    top: 70vh;
+    width: 100vw;
+    height: 100vw;
+    background-image: url('../images/road2.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 200;
+}
+.text{
+    position: relative;
+    font-size: 10rem;
+    color: white;
+    z-index: 150;
+}
+.inner-con{
+    margin: 200px 50px 100px 50px;
+    color: white;
+}
+.title{
+    font-size: 4rem;
+}
+.inner{
+    font-size: 1.5rem;
+}
+.subtitle{
+    font-size: 2rem;
+}
